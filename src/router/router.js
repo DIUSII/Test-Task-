@@ -1,7 +1,7 @@
 import Vue from 'vue'
 import Router from 'vue-router'
 
-// import ToDoList from '../components/ToDoList/todolist'
+import contact from '../components/contact/contact'
 import signIn from '../components/signIn/signIn'
 
 Vue.use(Router);
@@ -11,7 +11,7 @@ let router = new Router({
         {
             path:'/contact',
             name: 'contact',
-            // component: ToDoList
+            component: contact
         },
         {
             path: '/login',
@@ -20,6 +20,10 @@ let router = new Router({
         }
     ]
 });
+// if(localStorage.signin === undefined){
+    // router.push({ path: '/login' })
+// } else {
 
-router.push({ path: '/login' })
+// }
+
 export default router
