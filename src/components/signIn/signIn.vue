@@ -32,7 +32,7 @@ export default {
         clickButton(){
             if(this.user.login == this.login && this.user.password == this.password){
                 this.$router.push({path: './contact'});
-                // localStorage.signin = 'signin'
+                localStorage.signin = 'signin'
             } else if(this.login === "" && this.password === ""){
                 this.errorNull = true;
                 this.errorWarning = false;

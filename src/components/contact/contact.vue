@@ -1,6 +1,7 @@
 <template>
     <div class="body">
-        <div class="contact">
+        <div class="warning" v-if="localType != 'signin'">Вы не авторизованы</div>
+        <div class="contact" v-else>
             <div class="flex-container">
                 <ul class="contact__items">
                     <!-- Отображение контактов -->
@@ -102,6 +103,7 @@
                 editBoolionPhone: true,
                 inputName: "",
                 inputPhone: "",
+                localType: localStorage.signin
             }
         },
         directives:{
