@@ -1,8 +1,18 @@
 <template>
     <div class="modalWindowAddItem" :class="{'editHeight': error}">
         <h2 class="modalWindowAddItem__title">Добавление контакта</h2>
-        <input type="text" class="modalWindowAddItem__input modalWindowAddItem__name" v-model="user.name" placeholder="Введите Имя и Фамилию" maxlength="20">
-        <input type="text" class="modalWindowAddItem__input modalWindowAddItem__phone" v-mask="'7 (###) ###-##-##'" v-model="user.phone" placeholder="Номер телефона">
+        <input type="text" 
+            class="modalWindowAddItem__input modalWindowAddItem__name" 
+            v-model="user.name" placeholder="Введите Имя и Фамилию" 
+            maxlength="20"
+        >
+        <input 
+            type="text" 
+            class="modalWindowAddItem__input modalWindowAddItem__phone" 
+            v-mask="'7 (###) ###-##-##'" 
+            v-model="user.phone" 
+            placeholder="Номер телефона"
+        >
         <p class="modalWindowAddItem__error" v-show="error">Поля не должны быть пустыми</p>
         <form action="" class="modalWindowAddItem__form">
             <button class="modalWindowAddItem__button" @click="$emit('addItemInItems', addItemInItems())">Добавить</button>

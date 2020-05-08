@@ -12,17 +12,12 @@ export default {
     props: {
         'nameContact': String,
         'editLenghtModalDeleteItem': Boolean
-    },
-    data(){
-        return {
-            maxlength: this.nameContact.length,
-        }
     }
 }
 </script>
 <style lang="scss">
     .editHeightDelete{
-        height: 90px !important;
+        height: 80px !important;
     }
     .deleteModal{
         background-color: rgb(143, 125, 245);
