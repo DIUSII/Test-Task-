@@ -20,10 +20,10 @@ let router = new Router({
         }
     ]
 });
-// if(localStorage.signin === undefined){
-    // router.push({ path: '/login' })
-// } else {
-
-// }
+if(localStorage.signin === undefined){
+    router.push({ path: '/login' })
+} else {
+    router.push({ path: '/contact' })
+}
 
 export default router
