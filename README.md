@@ -1,24 +1,17 @@
 # vue-auth
 
-## Project setup
+## установить node_modules
 ```
-yarn install
-```
-
-### Compiles and hot-reloads for development
-```
-yarn serve
+yarn install or npm install
 ```
 
-### Compiles and minifies for production
+Запусить сервер
 ```
-yarn build
+yarn serve or npm run serve
 ```
+Так же нужно запустить json-server
 
-### Lints and fixes files
-```
-yarn lint
-```
+json-server --watch users.js // in path: D:\Test-Task--master
 
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+Готово!!!
+
