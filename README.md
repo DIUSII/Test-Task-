@@ -11,13 +11,13 @@ yarn serve or npm run serve
 ```
 ## Так же нужно запустить json-server
 ```
-yarn json-serve ot npm run json-serve
+yarn json-serve or npm run json-serve
 ```
 
 ## Авторизация
 ```
-логин: 123,
-пароль: 123
+Login: 123,
+password: 123
 ```
 ## Готово!!!
 
