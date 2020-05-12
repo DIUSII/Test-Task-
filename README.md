@@ -11,7 +11,13 @@ yarn serve or npm run serve
 ```
 ## Так же нужно запустить json-server
 ```
-json-server --watch users.js // in path: D:\Test-Task--master
+yarn json-serve ot npm run json-serve
 ```
-Готово!!!
+
+## Авторизация
+```
+логин: 123,
+пароль: 123
+```
+##Готово!!!
 
